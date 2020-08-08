@@ -15,6 +15,8 @@ int main()
     char *beca;
     float calf1, calf2, calf3, calf4, promedio;
 
+    //ESTRUCTURA SECUENCIAL
+
     /*Mensaje para ingresar nombre*/
     printf("Ingresa tu nombre: ");
     scanf("%[^\n]", nombre);
@@ -39,6 +41,8 @@ int main()
     scanf("%s", mat4);
     printf("Ingresa tu calificación: ");
     scanf("%f", &calf4);
+
+    // SELECTIVA DOBLE
 
     /*Calcular el promedio*/
     promedio = (calf1 + calf2 + calf3 + calf4) / 4;
