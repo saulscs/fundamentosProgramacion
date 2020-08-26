@@ -24,7 +24,7 @@ int main (){
 
 void lectura(char arr[], int n){
     for (int i = 0; i<n; i++){
-        printf("calificacion %d: ", i+1);
+        printf(" Ingresa calificacion %d: ", i+1);
         scanf("%s",&arr[i]);
         printf("\n");
     }
@@ -35,7 +35,7 @@ void lectura(char arr[], int n){
 
 int calificacion(char arr[]){
     int aprob = 0, repro = 0;
-    float promGeneral;
+    
 
     
     for (int i = 0; i<arr[i]; ++i) {
@@ -48,15 +48,16 @@ int calificacion(char arr[]){
             repro ++;
     }
     
-    printf("\nAprobaron %d: ",aprob);
-    printf("\nReprobaron %d: ",repro);
+    printf("\nAprobaron: %d ",aprob);
+    printf("\nReprobaron: %d ",repro);
     
-    promGeneral = (aprob/MAX)*100;
     
-    if (promGeneral >= 70){
+    
+    
+    if (aprob >= repro && repro <= aprob){
         printf("\nLo lograste estas aprobado");
     } else {
-        printf("\nSe requiere fortalezer la enseñanza");
+        printf("\nSe requiere fortalecer la enseñanza");
     }
     return 0;
 }
