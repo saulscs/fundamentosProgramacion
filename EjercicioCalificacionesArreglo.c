@@ -51,14 +51,12 @@ int calificacion(char arr[]){
     printf("\nAprobaron: %d ",aprob);
     printf("\nReprobaron: %d ",repro);
     
-    
-    
-    
     if (aprob >= repro && repro <= aprob){
         printf("\nLo lograste estas aprobado");
     } else {
         printf("\nSe requiere fortalecer la enseñanza");
     }
+    pause(60);    
     return 0;
 }
 
