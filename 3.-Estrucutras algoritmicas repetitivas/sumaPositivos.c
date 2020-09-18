@@ -1,8 +1,7 @@
-/* programa en C que, al recibir
-como datos N números enteros, obtenga solamente la suma de los números
-positivos. */
+/*Estructura repetitiva a WHILE*/
 
-/*estructura repetitiva for*/
+/* programa en C que, al recibir como datos N números enteros, obtenga solamente la suma de los números
+positivos. */
 
 #include <stdio.h>
 

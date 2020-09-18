@@ -12,7 +12,6 @@ int main(void) {
   int I;
   float SAL, NOM;
   NOM = 0;
-
   for(I=1; I <= 15; I++){
     printf("\nIngresa el salario del profesor %d: ",I);
     scanf("%f", &SAL);
