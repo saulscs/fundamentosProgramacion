@@ -1,5 +1,3 @@
-/*Estructura repetitiva for */
-
 
 /* al recibir como datos N números enteros, obtenga la suma de los números pares y el promedio
 de los impares. */
