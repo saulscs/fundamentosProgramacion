@@ -48,4 +48,6 @@ int main (){
   cambio = cambio%5;
   printf("\n\t%d monedas de $2", cambio/2);
   cambio = cambio%2;
+  printf("\n\t%d monedas de $1", cambio);
+  printf("\n\nAgradecemos su preferencia, disfrute su película\n\n");
 }
