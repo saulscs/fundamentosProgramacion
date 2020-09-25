@@ -4,7 +4,7 @@
 
 const int MAX = 100;
 
-void lectura(int , int);
+void lectura(int *, int);
 int busqueda(int * ,int,int);
 
 int main(){
