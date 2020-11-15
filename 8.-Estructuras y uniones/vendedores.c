@@ -17,7 +17,7 @@ typedef struct {
     banco che;
     banco nomi;
     char venta:
-};
+}fpago;
 
 
 /* Declaración de la estructura domicilio. */
@@ -30,15 +30,15 @@ typedef struct  {
 }domicilio;
 
 /* Declaración de la estructura vendedor. */
-typedef struct vendedor {
+ struct vendedor {
     int num;  /* Número de vendedor. */
     char nom[20]; /* Nombre del vendedor. */
     float ven[12]; /* Ventas del año. Arreglo unidimensional de tipo real. */
-    struct domicilio domi; /* domi es de tipo estructura domicilio. */
+    domicilio domi; /* domi es de tipo estructura domicilio. */
     float sal;  /* Salario mensual. */
     union fpago pago; /* pago es de tipo unión fpago. */
     int cla;  /* Clave forma de pago. */
-} VENDEDORES;
+};
 
 /* Prototipos de funciones. */
 
