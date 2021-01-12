@@ -13,6 +13,7 @@ const int MAX = 10; /* Se define una constante para el tamaño de los ➥arreglo
 void lectura(int VEC[],int T); 
 void imprime(int VEC[],int T);
 void producto(int *X, int *Y, int*Z, int T);
+
 /* Observa que en los
 ➥parámetros, para indicar que lo que se recibe es un arreglo, se puede escribir
 ➥VEC[] o *VEC. */
@@ -36,7 +37,7 @@ void lectura(int VEC[],int T){
   int I;
   printf("\n");
   for(I=0; I<T; I++){
-    printf("Ingresa el elemento %d: ", I++);
+    printf("Ingresa el elemento %d: ", I+1);
     scanf("%d", &VEC[I]);
   }
 }
@@ -55,7 +56,7 @@ void imprime(int VEC[],int T){
 ➥unidimensionales de T elementos de tipo entero. */
 void producto(int *X, int *Y, int*Z, int T){
   int I;
-  for (I = 0; I<T; I++){
+  for (I=0; I<T; I++){
     Z[I] = X[I] * Y[I];
   }
 }
