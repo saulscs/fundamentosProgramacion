@@ -7,7 +7,7 @@ El programa, al recibir como dato un arreglo unidimensional de enteros ➥que co
 
 const int MAX = 100;
 
-void lectura(int *, int );
+void lectura(int *, int );   /* Prototipos de funciones. */
 float medina(int *, int );
 float varianza(int *, int,float );
 float desviacion(float);
@@ -22,7 +22,7 @@ int main(){
     printf("Ingresa el tamaño del arreglo: ");
     scanf("%d",&TAM);
   }
-  while(TAM > MAX || TAM < 1);
+  while(TAM > MAX || TAM < 1);    /* Se verifica que el tamaño del arreglo sea correcto. */
   lectura(ALU,TAM);
   MED = medina(ALU, TAM);
   VAR = varianza(ALU, TAM, MED);

@@ -4,7 +4,7 @@
 
 const int MAX = 100;
 
-void lectura(int *, int);
+void lectura(int *, int);   /* Prototipos de funciones. */
 int busqueda(int * ,int,int);
 
 int main(){
@@ -15,12 +15,13 @@ int main(){
     scanf("%d",&TAM);
   }
   while (TAM >MAX || TAM < 1);
+  /* Se verifica que el tamaño del arreglo sea correcto. */
   lectura(VEC,TAM);
   printf("\nIngresa el elemento a buscar: ");
   scanf("%d", &ELE);
-  RES = busqueda(VEC,TAM,ELE);
-  /* Si RES tiene un valor verdadero —diferente de 0—, se escribe la posición ➥en la que se encontró el elemento. */
+  RES = busqueda(VEC,TAM,ELE);  /* Se llama a la función que busca en el ➥arreglo. */
   if(RES)
+    /* Si RES tiene un valor verdadero —diferente de 0—, se escribe la posición ➥en la que se encontró el elemento. */
   printf("\nEl elemento se encuentra en la posicion %d", RES);
   else 
     printf("\nEl elemento no se encuentra en el arreglo");

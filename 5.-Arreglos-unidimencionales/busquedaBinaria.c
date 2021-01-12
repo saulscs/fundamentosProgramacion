@@ -19,7 +19,7 @@ int main (){
   lectura(VEC,TAM);
   printf("Ingresa el elemento a buscar: ");
   scanf("%d", &ELE);
-  RES = binaria(VEC,TAM,ELE);
+  RES = binaria(VEC,TAM,ELE); /* Se llama a la función que busca en el ➥arreglo. */
 
   if(RES)
     /* Si RES tiene un valor verdadero —diferente de 0—, se escribe la ➥posición en la que se encontró el elemento. */
