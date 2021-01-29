@@ -1,5 +1,19 @@
 /* Ordenación por inserción directa. */
 
+/*  Inicialmente se tiene un solo elemento, 
+  que obviamente es un conjunto ordenado. Después, 
+  cuando hay k  elementos ordenados de menor a mayor, 
+  se toma el elemento k + 1  
+   y se compara con todos los elementos ya ordenados, 
+   deteniéndose cuando se encuentra un elemento menor 
+   (todos los elementos mayores han sido desplazados 
+   una posición a la derecha) o cuando ya no se encuentran 
+   elementos (todos los elementos fueron desplazados y 
+   este es el más pequeño). 
+   En este punto se inserta el elemento k + 1 
+   debiendo desplazarse los demás elementos. 
+*/
+
 #include <stdio.h>
 
 const int MAX = 100;

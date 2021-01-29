@@ -1,5 +1,17 @@
 /* Ordenación por selección directa. */
 
+/*Su funcionamiento es el siguiente:
+
+    Buscar el mínimo elemento de la lista
+    Intercambiarlo con el primero
+    Buscar el siguiente mínimo en el resto de la lista
+    Intercambiarlo con el segundo
+
+Y en general:
+
+    Buscar el mínimo elemento entre una posición i y el final de la lista
+    Intercambiar el mínimo con el elemento de la posición i*/
+
 #include <stdio.h>
 
 const int MAX = 100;
