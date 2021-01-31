@@ -1,6 +1,14 @@
+
 /* Estadístico.
 El programa, al recibir como dato un arreglo unidimensional de enteros ➥que contiene calificaciones, calcula la media, la varianza, la
 ➥desviación estándar y la moda. */
+
+/*a) ‘La media aritmética. Ésta se calcula como la suma de los elementos entre
+el número de elementos.
+b) La varianza. Ésta se calcula como la suma de los cuadrados de las desviaciones
+de la media, entre el número de elementos.
+c) La desviación estándar. Se calcula como la raíz cuadrada de la varianza.
+d) La moda. Se calcula obteniendo el número con mayor frecuencia.*/
 
 #include <stdio.h>
 #include <math.h>
@@ -8,7 +16,7 @@ El programa, al recibir como dato un arreglo unidimensional de enteros ➥que co
 const int MAX = 100;
 
 void lectura(int *, int );   /* Prototipos de funciones. */
-float medina(int *, int );
+float media(int *, int );
 float varianza(int *, int,float );
 float desviacion(float);
 void frecuencia(int *, int  ,int *);
@@ -24,7 +32,7 @@ int main(){
   }
   while(TAM > MAX || TAM < 1);    /* Se verifica que el tamaño del arreglo sea correcto. */
   lectura(ALU,TAM);
-  MED = medina(ALU, TAM);
+  MED = media(ALU, TAM);
   VAR = varianza(ALU, TAM, MED);
   DES = desviacion(VAR);
   frecuencia(ALU,TAM,FRE);
@@ -45,7 +53,7 @@ void lectura(int A[], int T){
   }
 }
 /* Esta función se utiliza para calcular la media. */
-float medina(int A[], int T){
+float media(int A[], int T){
   int I;
   float SUM = 0.0;
   
@@ -88,3 +96,4 @@ int moda (int A[], int T){
   }
   return (MOD);
 }
+
