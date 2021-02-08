@@ -37,25 +37,25 @@ int main(void){
 
 void lectura(int A[][MAX], int F, int C){
   int I,J;
-  for (I=0; I<F; I++)
-    for (J=0; J < C; J++){
-      printf("Ingrese el elemento %d %d: ", I+1, J+1);
+  for (I = 0; I < F; I++)
+    for (J = 0; J < C; J++){
+      printf("Ingrese el elemento %d %d: ", I+1, F+1); /*Revisar esta linea de codigo*/
       scanf("%d", &A[I][J]);
     }
 }
 
 void suma(int M1[][MAX], int M2[][MAX], int M3[][MAX], int F, int C){
   int I, J;
-  for (I=0; I<F; I++)
-    for(J=0; J<C; J++){
+  for (I = 0; I < F; I++)
+    for(J = 0; J < C; J++){
       M3[I][J] = M1[I][J] + M2[I][J];
     }
 }
 
 void imprime (int A[][MAX], int F, int C){
   int I, J;
-  for (I=0; I< F; I++)
-    for (J=0; J<C; I++){
+  for ( I= 0; I < F; I++)
+    for (J = 0; J < C; J++){
       printf("\nElemento %d %d: %d", I,J, A[I][J]);
     }
 }
