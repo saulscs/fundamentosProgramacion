@@ -6,7 +6,7 @@ diagonal principal. */
 
 const int TAM = 10;
 
-void lectura(int  [][TAM], int );
+void lectura(int  [][TAM], int ); /*Prototipos*/
 void imprimir(int  [][TAM], int );
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
 void lectura(int A[][TAM], int F){
   int I, J;
     for (I=0; I < F; I++)
-      for (J=0; I < F; J++){
+      for (J=0; J < F; J++){
         printf("Ingrese el elemento %d %d: ", I+1, J+1);
         scanf("%d", &A[I][J]);
       }

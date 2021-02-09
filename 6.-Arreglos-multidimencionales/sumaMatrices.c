@@ -5,7 +5,7 @@ El programa, al recibir como datos dos arreglos bidimensionales del mismo
 
 #include <stdio.h>
 
-const int MAX = 5;
+const int MAX = 10;
 
 void lectura(int [][MAX], int , int );
 void suma(int  [][MAX], int [][MAX], int [][MAX], int , int );
@@ -39,7 +39,7 @@ void lectura(int A[][MAX], int F, int C){
   int I,J;
   for (I = 0; I < F; I++)
     for (J = 0; J < C; J++){
-      printf("Ingrese el elemento %d %d: ", I+1, F+1); /*Revisar esta linea de codigo*/
+      printf("Ingrese el elemento %d %d: ", I+1, J+1); 
       scanf("%d", &A[I][J]);
     }
 }
